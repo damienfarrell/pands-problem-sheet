@@ -13,4 +13,4 @@ amount2 = input("Enter amount2(in cent): ")
 total = (int(amount1) + int(amount2))/100
 
 
-str(print(f'The sum of these is €{total}'))
+print(f'The sum of these is €{total:.2f}')
