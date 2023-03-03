@@ -2,6 +2,7 @@
 # Author: Damien Farrell
 # Write a program that outputs whether or not today is a weekday.
 
+
 # In order to retrieve the date I must import the date method from the datetime module.
 from datetime import date 
 
