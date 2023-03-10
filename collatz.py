@@ -9,14 +9,14 @@
 
 number = int(input("Please enter a positive integer: "))
 
-# The end goal is to let the number equal 1. The number of steps are unkown. 
+# The end goal is to let the number equal 1. The number of steps are unknown. 
 # So a loop until the input number is equal to 1 would work.
 while number != 1:
 # Using the mod remainder with a if statement to check whether the number is odd or even.
     if number % 2 == 0:
-# Condition if even and true
+        # Condition if even and true
         number = number // 2
     else:
-# Condition if odd and false
+        # Condition if odd and false
         number = (number * 3) + 1
     print(number, end=" ")

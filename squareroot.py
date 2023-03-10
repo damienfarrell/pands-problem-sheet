@@ -11,11 +11,11 @@ def sqrt(number):
 # The iterator.
     y = 0
     while y < 20:
-#The newton formula for square roots.
+        #The newton formula for square roots.
         answer = 0.5 * (n + (number / n))
         n = answer
         y += 1
-# Return both the input number and answer for the print statement.
+    # Return both the input number and answer for the print statement.
     return number, answer
 
 # The input.

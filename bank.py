@@ -15,5 +15,5 @@ amount2 = input("Enter amount2(in cent): ")
 # Calculation to put as two decimal places for euros & cent. Also converted the string to int here.
 total = (int(amount1) + int(amount2))/100
 
- # Printing the answer in a formatted string. I learned the two decimal place ":.2f" of some lad in the discussion forum.
+ # Printing the answer in a formatted string to two decimal places ":.2f".
 print(f'The sum of these is €{total:.2f}')

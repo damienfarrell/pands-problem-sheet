@@ -1,4 +1,4 @@
-![Alt text](PANDS_PROBLEM_SHEET.png)
+![Banner Image](./markdown-image-files/PANDS_PROBLEM_SHEET.png)
 ---
 ---
 ![GitHub last commit](https://img.shields.io/github/last-commit/damienfarrell/pands-problem-sheet)
@@ -11,7 +11,6 @@
 2. [Additional Markdown Tips](https://www.youtube.com/watch?v=a8CwpGARAsQ)
 3. [Banner Creater](https://banner.godori.dev/)
 4. [GitHub Metadata Badges](https://shields.io/)
-5. [Inserting Code](https://www.youtube.com/watch?v=a8CwpGARAsQ)
 
 ## Topic 02 Task:
 1. [Rounding Within A Formatted String](https://vlegalwaymayo.atu.ie/mod/forum/discuss.php?d=49560)
@@ -48,4 +47,8 @@ print("Today's date:", today)
 1. [World's Fastest Square Root: Newton's Method](https://www.youtube.com/watch?v=FpOEx6zFf1o)
 2. [Square Roots via Newton’s Method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
 
-![Alt text](Newton's%20Method.PNG)
+![Newton's Method](./markdown-image-files/Newton's%20Method.PNG)
+
+## Topic 07 Task:
+1. [Count The Number of Occurrences In A String](https://stackoverflow.com/questions/1155617/count-the-number-of-occurrences-of-a-character-in-a-string)
+2. [How To Use sys.argv In Python With Examples](https://www.knowledgehut.com/blog/programming/sys-argv-python-examples)
