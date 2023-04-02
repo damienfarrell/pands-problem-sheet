@@ -52,3 +52,9 @@ print("Today's date:", today)
 ## Topic 07 Task:
 1. [Count The Number of Occurrences In A String](https://stackoverflow.com/questions/1155617/count-the-number-of-occurrences-of-a-character-in-a-string)
 2. [How To Use sys.argv In Python With Examples](https://www.knowledgehut.com/blog/programming/sys-argv-python-examples)
+
+## Topic 08 Task:
+1. [Using The 'numpy.random.normal' Method] (https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
+2. [Using The 'numpy.arange' Method] (https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
+3. [Making Matplotlib Beautiful By Default] (https://towardsdatascience.com/making-matplotlib-beautiful-by-default-d0d41e3534fd)
+4. [Matplotlib Formatting] (https://www.w3schools.com/python/matplotlib_pyplot.asp)
