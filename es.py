@@ -19,5 +19,5 @@ else:
         # Reading it.
         book = txt_file.read()
         # Counting the number of letters.
-        number_of_letters = book.count(letter_to_count)
+        number_of_letters = book.count(letter_to_count.upper()) + book.count(letter_to_count.lower())
     print(number_of_letters)
