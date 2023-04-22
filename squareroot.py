@@ -3,24 +3,25 @@
 # Author: Damien Farrell
 
 
+import math
 # Define the function 'sqrt' with one argument of 'number'.
 def sqrt(number):
-# The calcuation part.
+# The calculation part.
 # The guess variable.
-    n = 5
-# The iterator.
-    y = 0
-    while y < 20:
+    prev_n = 0
+    n = number
+    # Checks whether the answer and the previous answer are close, the default value is 1e-09. When close it exits.
+    while math.isclose(n, prev_n) != True:
         #The newton formula for square roots.
         answer = 0.5 * (n + (number / n))
+        prev_n = n
         n = answer
-        y += 1
-    # Return both the input number and answer for the print statement.
-    return number, answer
+    # Returns the answer for the print statement.
+    return answer
 
 # The input.
 input_number = float(input("Please enter a positive number: "))
-# Getting the returns out of the fuction.
-number, answer = sqrt(input_number)
+# Getting the return out of the fuction.
+answer = sqrt(input_number)
 
-print(f"The square root of {number} is approx. {answer}.")
+print(f"The square root of {input_number} is approx. {answer}.")

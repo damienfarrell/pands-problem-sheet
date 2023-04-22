@@ -8,6 +8,7 @@
 
 
 number = int(input("Please enter a positive integer: "))
+# Prints the input number
 print(number, end=" ")
 # The end goal is to let the number equal 1. The number of steps are unknown. 
 # So a loop until the input number is equal to 1 would work.
@@ -20,4 +21,4 @@ while number != 1:
         # Condition if odd and false
         number = (number * 3) + 1
     print(number, end=" ")
-print("\n")  # add a newline character at the end of the output
+print("\n")  # add a newline character at the end of the program

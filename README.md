@@ -23,6 +23,7 @@ print(f"The value of pi is approximately {num:.2f}")
 ## Topic 03 Task:
 1. [Replace First N Characters From A String In Python](https://thispointer.com/replace-first-n-characters-from-a-string-in-python/)
 
+
 ```python
 strValue = 'Sample String'
 n = 3
@@ -46,6 +47,7 @@ print("Today's date:", today)
 ## Topic 06 Task:
 1. [World's Fastest Square Root: Newton's Method](https://www.youtube.com/watch?v=FpOEx6zFf1o)
 2. [Square Roots via Newton’s Method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
+3. [Python math.isclose() Method](https://www.w3schools.com/python/ref_math_isclose.asp)
 
 ![Newton's Method](./markdown-image-files/Newton's%20Method.PNG)
 
