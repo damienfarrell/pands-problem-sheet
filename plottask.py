@@ -3,51 +3,45 @@
 # and a plot of the function h(x)=x3 in the range [0, 10], on the one set of axes.
 # Author: Damien Farrell
 
+
 # Import Modules.
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Setting the colour list
-CB91_Green = '#47DBCD'
-CB91_Blue = '#2CBDFE'
-CB91_Pink = '#F3A0F2'
-CB91_Purple = '#9D2EC5'
-CB91_Violet = '#661D98'
-CB91_Amber = '#F5B14C'
+plt.style.use('ggplot') # Uses style template
 
 # Set font size as:
 title_fontsize = 15
 axis_fontsize = 12
 
-color_list = [CB91_Green, CB91_Pink, CB91_Blue, CB91_Amber,
-              CB91_Purple, CB91_Violet]
-plt.rcParams['axes.prop_cycle'] = plt.cycler(color=color_list)
-
 # Set up random numpy normalised hist data with a mean of 5 and sd of 2.
 hist_data = np.random.normal(size=1000, loc=5, scale=2)
-
-# Histogram formatting
-plt.legend()
-plt.grid(True)
-plt.title('Histogram', fontsize=title_fontsize)
-plt.xlabel('Value', fontsize=axis_fontsize)
-plt.ylabel('Frequency', fontsize=axis_fontsize)
-
-# Plot a histogram data with matplotlib.
-plt.hist(hist_data)
-plt.show()
 
 # Setting the data for a line plot.
 xpoints = np.arange(0, 11)
 ypoints = xpoints * 3
 
-# Line plot formatting
-plt.legend()
-plt.grid(True)
-plt.title('Line Plot', fontsize=title_fontsize)
-plt.xlabel('X Points', fontsize=axis_fontsize)
-plt.ylabel('Y Points', fontsize=axis_fontsize)
+# Create a figure and axis
+fig, ax1 = plt.subplots()
 
-# Plotting the line plot. 
-plt.plot(xpoints, ypoints, linestyle='--', alpha=0.5)
+# Histogram formatting
+ax1.hist(hist_data, alpha=0.7, label='Histogram')
+ax1.set_xlabel('Value', fontsize=axis_fontsize)
+ax1.set_ylabel('Frequency', fontsize=axis_fontsize, color='C0')
+ax1.tick_params(axis='y', labelcolor='C0')
+
+# Line plot formatting
+ax2 = ax1.twinx()
+ax2.plot(xpoints, ypoints, linestyle='--', alpha=0.5, color='C1', label='Line Plot')
+ax2.set_ylabel('Y Points', fontsize=axis_fontsize, color='C1')
+ax2.tick_params(axis='y', labelcolor='C1')
+
+# Set the title for both plots
+plt.title('Histogram and Line Plot', fontsize=title_fontsize)
+
+# Adding a legend to the plot
+lines, labels = ax1.get_legend_handles_labels()
+lines2, labels2 = ax2.get_legend_handles_labels()
+ax1.legend(lines + lines2, labels + labels2, loc='best')
+
 plt.show()

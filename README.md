@@ -58,5 +58,6 @@ print("Today's date:", today)
 ## Topic 08 Task:
 1. [Using The 'numpy.random.normal' Method](https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
 2. [Using The 'numpy.arange' Method](https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
-3. [Making Matplotlib Beautiful By Default](https://towardsdatascience.com/making-matplotlib-beautiful-by-default-d0d41e3534fd)
-4. [Matplotlib Formatting](https://www.w3schools.com/python/matplotlib_pyplot.asp)
+3. [Matplotlib Formatting](https://www.w3schools.com/python/matplotlib_pyplot.asp)
+4. [Matplotlib.axes.Axes.twinx() in Python](https://www.geeksforgeeks.org/matplotlib-axes-axes-twinx-in-python/)
+5. [Secondary axis with twinx(): how to add to legend?](https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend)
