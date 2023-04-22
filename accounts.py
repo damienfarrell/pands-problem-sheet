@@ -5,10 +5,12 @@
 
 # Took this process from the reference listed in the readme file.
 accountnumber = input("Please enter an 10 digit account number: ")
-# Number of characters to replace.
-n = 6
-replacement_string = "XXXXXX"
-# Splicing the string and sticking it together.
-displayed_accountnumber = replacement_string + accountnumber[n:]
-
-print(f"{displayed_accountnumber}")
+if len(accountnumber) != 10:
+    print(f"You have entered: {len(accountnumber)} digits, please enter 10 digits ")
+else:
+    # Number of characters to replace.
+    n = 6
+    replacement_string = "XXXXXX"
+    # Splicing the string and sticking it together.
+    displayed_accountnumber = replacement_string + accountnumber[n:]
+    print(f"{displayed_accountnumber}")
